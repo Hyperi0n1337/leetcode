@@ -27,11 +27,7 @@ class Solution:
                         else:
                             List.append(nums.index(nums[FirstTerm]))
                             List.append(nums.index(nums[SecondTerm+n]))
-                            if List[0] == List[1]:
-                                List[1] += 1
-                                return List
-                            else:
-                                return List
+                            return List
                             break
             FirstTerm += 1
             SecondTerm += 1
