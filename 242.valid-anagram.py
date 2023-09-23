@@ -7,14 +7,8 @@
 # @lc code=start
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) == len(t):
-            s_list = list(s)
-            t_list = list(t)
-            for i,v in enumerate(s_list[:]):
-                if v in t_list:
-                    t_list.remove(v)
-                    if t_list == []:
-                        return True
-        return False
+            if len(s) == len(t) and sorted(s) == sorted(t):
+                return True
+            return False
 # @lc code=end
 
